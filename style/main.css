@@ -99,7 +99,45 @@ nav ul li.active {
 
 .banner-image {
     width: max-content;
+    position: relative;
 }
 .banner-image img {
     height: 500px;
+}
+
+.floating-card {
+    position: absolute;
+    background: #4c4c4c94;
+    backdrop-filter: blur(2px);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.floating-card h5 {
+    font-size: 25px;
+    font-weight: 900;
+}
+.floating-card p {
+    font-size: 13px;
+    color: rgb(214, 212, 212);
+}
+
+.floating-card.top {
+    top: 25%;
+    right: -10%;
+}
+
+.floating-card.bottom {
+    bottom: 20%;
+    left: -20%;
+}
+
+.floating-card .circle {
+    width: 30px;
+    height: 30px;
+    background: #E6533C;
+    border-radius: 50%;
 }
