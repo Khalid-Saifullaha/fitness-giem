@@ -66,6 +66,17 @@ nav ul li.active {
     border-radius: 50px;
 }
 
+nav .menu-icon {
+    display: none;
+}
+@media screen and (max-width: 425px) {
+    nav .menu-icon {
+        display: inline;
+    }
+    nav ul {
+        display: none;
+    }
+}
 .banner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -105,6 +116,19 @@ nav ul li.active {
     height: 500px;
 }
 
+@media screen and (max-width: 425px) {
+    .banner {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .banner-image-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 .floating-card {
     position: absolute;
     background: #4c4c4c94;
@@ -140,4 +164,16 @@ nav ul li.active {
     height: 30px;
     background: #E6533C;
     border-radius: 50%;
+}
+
+@media screen and (max-width: 425px) {
+    .floating-card.top {
+        top: 25%;
+        
+    }
+   
+    .floating-card.bottom {
+        bottom: 30%;
+        
+    }
 }
